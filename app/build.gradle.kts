@@ -6,7 +6,7 @@ plugins {
     alias(libs.plugins.kotlin.ksp)
     alias(libs.plugins.kotlin.serialization)
     id("org.jetbrains.kotlin.plugin.compose") version "2.0.21"
-    alias(libs.plugins.google.services) apply false
+    alias(libs.plugins.google.services)
 }
 
 val localProps = Properties().apply {
@@ -26,9 +26,6 @@ val newsApiKey = readSecret("NEWS_API_KEY")
 val newsBaseUrl = readSecret("NEWS_BASE_URL").ifBlank { "https://newsapi.org/" }
 val newsApiDailyLimit = readSecret("NEWS_API_DAILY_LIMIT").toIntOrNull()?.coerceAtLeast(1) ?: 90
 val backendAppToken = readSecret("BACKEND_APP_TOKEN")
-val firebaseWebClientId = readSecret("FIREBASE_WEB_CLIENT_ID")
-val firebaseAuthEnabled = firebaseWebClientId.isNotBlank()
-
 android {
     namespace = "com"
     compileSdk = 35
@@ -55,8 +52,6 @@ android {
         buildConfigField("String", "NEWS_BASE_URL", "\"$newsBaseUrl\"")
         buildConfigField("int", "NEWS_API_DAILY_LIMIT", newsApiDailyLimit.toString())
         buildConfigField("String", "BACKEND_APP_TOKEN", "\"$backendAppToken\"")
-        buildConfigField("String", "FIREBASE_WEB_CLIENT_ID", "\"$firebaseWebClientId\"")
-        buildConfigField("boolean", "FIREBASE_AUTH_ENABLED", firebaseAuthEnabled.toString())
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }

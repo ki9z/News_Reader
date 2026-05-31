@@ -22,15 +22,15 @@ class OtpVM(
         message = "Đang gửi yêu cầu..."
 
         viewModelScope.launch {
-            val success = withContext(Dispatchers.IO) {
+            val result = withContext(Dispatchers.IO) {
                 repository.sendOTP(email)
             }
 
-            if (success) {
+            if (result.success) {
                 message = "Đã gửi OTP mới"
                 startTimer()
             } else {
-                message = "Lỗi kết nối server"
+                message = result.message ?: "Không gửi được OTP"
             }
         }
     }
@@ -44,15 +44,15 @@ class OtpVM(
         }
 
         viewModelScope.launch {
-            val success = withContext(Dispatchers.IO) {
+            val result = withContext(Dispatchers.IO) {
                 repository.verifyOTP(email, otpCode)
             }
 
-            if (success) {
+            if (result.success) {
                 message = "Xác thực thành công"
                 onResult(true)
             } else {
-                message = "Mã OTP không chính xác hoặc đã hết hạn"
+                message = result.message ?: "Mã OTP không chính xác hoặc đã hết hạn"
                 onResult(false)
             }
         }

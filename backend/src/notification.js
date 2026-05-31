@@ -12,12 +12,23 @@ export function initializeFirebaseAdmin() {
     return true;
   }
 
-  const serviceAccountPath = process.env.FIREBASE_SERVICE_ACCOUNT_PATH;
-  if (!serviceAccountPath || !fs.existsSync(serviceAccountPath)) {
-    return false;
+  let serviceAccount = null;
+
+  const serviceAccountJson = process.env.FIREBASE_SERVICE_ACCOUNT_JSON;
+  if (serviceAccountJson) {
+    try {
+      serviceAccount = JSON.parse(serviceAccountJson);
+    } catch {
+      return false;
+    }
+  } else {
+    const serviceAccountPath = process.env.FIREBASE_SERVICE_ACCOUNT_PATH;
+    if (!serviceAccountPath || !fs.existsSync(serviceAccountPath)) {
+      return false;
+    }
+    serviceAccount = JSON.parse(fs.readFileSync(serviceAccountPath, "utf8"));
   }
 
-  const serviceAccount = JSON.parse(fs.readFileSync(serviceAccountPath, "utf8"));
   admin.initializeApp({
     credential: admin.credential.cert(serviceAccount)
   });

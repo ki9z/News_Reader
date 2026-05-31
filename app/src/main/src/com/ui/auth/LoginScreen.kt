@@ -17,7 +17,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
-import com.BuildConfig
+import com.R
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
@@ -43,10 +43,12 @@ fun LoginScreen(
     }
 
     val googleSignInClient = remember {
+        val webClientId = runCatching { context.getString(R.string.default_web_client_id) }
+            .getOrDefault("")
         val optionsBuilder = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
             .requestEmail()
-        if (BuildConfig.FIREBASE_WEB_CLIENT_ID.isNotBlank()) {
-            optionsBuilder.requestIdToken(BuildConfig.FIREBASE_WEB_CLIENT_ID)
+        if (webClientId.isNotBlank()) {
+            optionsBuilder.requestIdToken(webClientId)
         }
         GoogleSignIn.getClient(context, optionsBuilder.build())
     }
@@ -81,7 +83,10 @@ fun LoginScreen(
                     viewModel.errorMessage = "Đăng nhập Google thất bại: ${error.message}"
                 }
         } catch (e: ApiException) {
-            viewModel.errorMessage = "Đăng nhập Google bị hủy hoặc lỗi: ${e.statusCode}"
+            viewModel.errorMessage = when (e.statusCode) {
+                10 -> "Đăng nhập Google bị lỗi cấu hình OAuth (status 10). Kiểm tra SHA-1 của app trong Firebase và package name."
+                else -> "Đăng nhập Google bị hủy hoặc lỗi: ${e.statusCode}"
+            }
         }
     }
 
@@ -159,10 +164,11 @@ fun LoginScreen(
 
         OutlinedButton(
             modifier = Modifier.fillMaxWidth(),
-            enabled = BuildConfig.FIREBASE_AUTH_ENABLED,
+            enabled = runCatching { context.getString(R.string.default_web_client_id) }.getOrDefault("").isNotBlank(),
             onClick = {
-                if (!BuildConfig.FIREBASE_AUTH_ENABLED) {
-                    viewModel.errorMessage = "Chưa cấu hình FIREBASE_WEB_CLIENT_ID"
+                val webClientId = runCatching { context.getString(R.string.default_web_client_id) }.getOrDefault("")
+                if (webClientId.isBlank()) {
+                    viewModel.errorMessage = "Chưa có default_web_client_id từ google-services.json"
                 } else {
                     googleLauncher.launch(googleSignInClient.signInIntent)
                 }

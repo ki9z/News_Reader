@@ -1,0 +1,17 @@
+node_modules
+npm-debug.log*
+.git
+.gitignore
+.env
+coverage
+
+# Exclude accidental Android/Gradle artifacts in this folder
+app
+.gradle
+gradle
+gradlew
+gradlew.bat
+build.gradle.kts
+gradle.properties
+settings.gradle.kts
+

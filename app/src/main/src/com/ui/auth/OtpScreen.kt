@@ -29,6 +29,11 @@ fun OtpScreen(
     email: String,
     viewModel: OtpVM
 ) {
+    LaunchedEffect(email) {
+        if (!viewModel.isTimerRunning) {
+            viewModel.sendOTP(email)
+        }
+    }
 
     val focusRequesters = List(6) { FocusRequester() }
 
