@@ -6,7 +6,7 @@ plugins {
     alias(libs.plugins.kotlin.ksp)
     alias(libs.plugins.kotlin.serialization)
     id("org.jetbrains.kotlin.plugin.compose") version "2.0.21"
-    alias(libs.plugins.google.services)
+    alias(libs.plugins.google.services) apply false
 }
 
 val localProps = Properties().apply {
@@ -14,6 +14,10 @@ val localProps = Properties().apply {
     if (file.exists()) {
         file.inputStream().use { input -> this.load(input) }
     }
+}
+
+if (file("google-services.json").exists()) {
+    apply(plugin = "com.google.gms.google-services")
 }
 
 fun readSecret(key: String): String {

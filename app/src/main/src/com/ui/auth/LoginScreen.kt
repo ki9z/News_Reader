@@ -17,7 +17,6 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
-import com.R
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
@@ -34,6 +33,11 @@ fun LoginScreen(
 ) {
     val context = LocalContext.current
 
+    fun resolveGoogleWebClientId(): String {
+        val id = context.resources.getIdentifier("default_web_client_id", "string", context.packageName)
+        return if (id != 0) context.getString(id) else ""
+    }
+
     fun openMainActivity() {
         val intent = Intent(context, MainActivity::class.java).apply {
             flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
@@ -43,8 +47,7 @@ fun LoginScreen(
     }
 
     val googleSignInClient = remember {
-        val webClientId = runCatching { context.getString(R.string.default_web_client_id) }
-            .getOrDefault("")
+        val webClientId = resolveGoogleWebClientId()
         val optionsBuilder = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
             .requestEmail()
         if (webClientId.isNotBlank()) {
@@ -61,7 +64,7 @@ fun LoginScreen(
             val account = task.getResult(ApiException::class.java)
             val googleIdToken = account.idToken
             if (googleIdToken.isNullOrBlank()) {
-                viewModel.errorMessage = "Thiếu Google ID token. Kiểm tra FIREBASE_WEB_CLIENT_ID."
+                viewModel.errorMessage = "Thiếu Google ID token. Kiểm tra google-services.json và cấu hình Firebase."
                 return@rememberLauncherForActivityResult
             }
 
@@ -164,9 +167,9 @@ fun LoginScreen(
 
         OutlinedButton(
             modifier = Modifier.fillMaxWidth(),
-            enabled = runCatching { context.getString(R.string.default_web_client_id) }.getOrDefault("").isNotBlank(),
+            enabled = resolveGoogleWebClientId().isNotBlank(),
             onClick = {
-                val webClientId = runCatching { context.getString(R.string.default_web_client_id) }.getOrDefault("")
+                val webClientId = resolveGoogleWebClientId()
                 if (webClientId.isBlank()) {
                     viewModel.errorMessage = "Chưa có default_web_client_id từ google-services.json"
                 } else {
