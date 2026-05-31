@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Login/Register Container -->
+    <FrameLayout
+        android:id="@+id/loginContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <!-- Profile Content -->
+    <ScrollView
+        android:id="@+id/profileScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/news_bg_white"
+        android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingTop="16dp"
+            android:paddingEnd="12dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/profile_title"
+                android:textColor="@color/news_primary_text"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/btnSettings"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/profile_settings"
+                android:padding="12dp"
+                android:src="@drawable/ic_ms_settings"
+                app:tint="@color/news_primary_text" />
+        </LinearLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="12dp"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="2dp"
+            app:strokeColor="@color/news_divider"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/ivAvatar"
+                    android:layout_width="62dp"
+                    android:layout_height="62dp"
+                    android:background="@android:color/darker_gray"
+                    android:contentDescription="@string/profile_avatar_content"
+                    android:padding="14dp"
+                    android:src="@drawable/ic_ms_person" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvDisplayName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/profile_demo_name"
+                        android:textColor="@color/news_primary_text"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvEmail"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/profile_demo_email"
+                        android:textColor="@color/news_secondary_text"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="12dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="1dp"
+            app:strokeColor="@color/news_divider"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnLogin"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/profile_login"
+                    android:textColor="@color/news_link_blue"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnLogout"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginVertical="4dp"
+                    android:text="@string/profile_logout"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/profile_activity_section"
+            android:textColor="@color/news_primary_text"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="1dp"
+            app:strokeColor="@color/news_divider"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/rowSavedArticles"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="16dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_ms_bookmark"
+                        app:tint="@color/news_secondary_text" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_weight="1"
+                        android:text="@string/profile_saved_articles"
+                        android:textColor="@color/news_primary_text" />
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/ic_ms_chevron_right"
+                        app:tint="@color/news_secondary_text" />
+                </LinearLayout>
+
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/news_divider" />
+
+                <LinearLayout
+                    android:id="@+id/rowReadingHistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="16dp">
+
+                    <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_ms_history" app:tint="@color/news_secondary_text" />
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_weight="1" android:text="@string/profile_reading_history" android:textColor="@color/news_primary_text" />
+                    <ImageView android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/ic_ms_chevron_right" app:tint="@color/news_secondary_text" />
+                </LinearLayout>
+
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/news_divider" />
+
+                <LinearLayout
+                    android:id="@+id/rowFollowingTopics"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="16dp">
+
+                    <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_ms_topic" app:tint="@color/news_secondary_text" />
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_weight="1" android:text="@string/profile_following_topics" android:textColor="@color/news_primary_text" />
+                    <ImageView android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/ic_ms_chevron_right" app:tint="@color/news_secondary_text" />
+                </LinearLayout>
+
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/news_divider" />
+
+                <LinearLayout
+                    android:id="@+id/rowDownloads"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="16dp">
+
+                    <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_ms_download" app:tint="@color/news_secondary_text" />
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_weight="1" android:text="@string/profile_downloads" android:textColor="@color/news_primary_text" />
+                    <ImageView android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/ic_ms_chevron_right" app:tint="@color/news_secondary_text" />
+                </LinearLayout>
+
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/news_divider" />
+
+                <LinearLayout
+                    android:id="@+id/rowAdmin"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="16dp">
+
+                    <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_ms_settings" app:tint="@color/news_secondary_text" />
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_weight="1" android:text="@string/profile_admin_title" android:textColor="@color/news_primary_text" />
+                    <ImageView android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/ic_ms_chevron_right" app:tint="@color/news_secondary_text" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/profile_preferences"
+            android:textColor="@color/news_primary_text"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="1dp"
+            app:strokeColor="@color/news_divider"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="16dp">
+
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/profile_dark_mode" android:textColor="@color/news_primary_text" />
+                    <com.google.android.material.materialswitch.MaterialSwitch android:id="@+id/switchDarkMode" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/news_divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="16dp">
+
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/profile_push_notifications" android:textColor="@color/news_primary_text" />
+                    <com.google.android.material.materialswitch.MaterialSwitch android:id="@+id/switchNotifications" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/news_divider" />
+
+                <LinearLayout
+                    android:id="@+id/rowLanguage"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="16dp">
+
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/profile_language" android:textColor="@color/news_primary_text" />
+                    <TextView android:id="@+id/tvLanguageValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/news_secondary_text" />
+                </LinearLayout>
+
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/news_divider" />
+
+                <LinearLayout
+                    android:id="@+id/rowTextSize"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="16dp">
+
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/profile_text_size" android:textColor="@color/news_primary_text" />
+                    <TextView android:id="@+id/tvTextSizeValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/news_secondary_text" />
+                </LinearLayout>
+
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/news_divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="16dp">
+
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/profile_data_saver" android:textColor="@color/news_primary_text" />
+                    <com.google.android.material.materialswitch.MaterialSwitch android:id="@+id/switchDataSaver" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/profile_account_title"
+            android:textColor="@color/news_primary_text"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="1dp"
+            app:strokeColor="@color/news_divider"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/rowAccountSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="16dp">
+
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/profile_account_settings" android:textColor="@color/news_primary_text" />
+                    <ImageView android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/ic_ms_chevron_right" app:tint="@color/news_secondary_text" />
+                </LinearLayout>
+
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/news_divider" />
+
+                <LinearLayout
+                    android:id="@+id/rowPrivacyPolicy"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="16dp">
+
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/profile_privacy_policy" android:textColor="@color/news_primary_text" />
+                    <ImageView android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/ic_ms_chevron_right" app:tint="@color/news_secondary_text" />
+                </LinearLayout>
+
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/news_divider" />
+
+                <LinearLayout
+                    android:id="@+id/rowHelpSupport"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="16dp">
+
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/profile_help_support" android:textColor="@color/news_primary_text" />
+                    <ImageView android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/ic_ms_chevron_right" app:tint="@color/news_secondary_text" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/tvAppVersion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:gravity="center"
+            android:text="@string/profile_version"
+            android:textColor="@color/news_secondary_text"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</ScrollView>
+
+</FrameLayout>

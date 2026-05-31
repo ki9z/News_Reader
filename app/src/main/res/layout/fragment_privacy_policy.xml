@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:title="@string/profile_privacy_policy"
+        app:navigationIcon="@drawable/ic_back" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="16dp"
+                android:paddingTop="16dp"
+                android:text="@string/profile_privacy_summary_title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="@string/profile_privacy_content"
+                android:textColor="@color/news_primary_text"
+                android:textSize="15sp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                app:cardCornerRadius="12dp"
+                app:strokeColor="@color/news_divider"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/btnManageActivity"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="16dp"
+                        android:text="@string/profile_manage_activity" />
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/news_divider" />
+
+                    <TextView
+                        android:id="@+id/btnClearHistory"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="16dp"
+                        android:text="@string/profile_clear_all" />
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/news_divider" />
+
+                    <TextView
+                        android:id="@+id/btnClearSearch"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="16dp"
+                        android:text="@string/profile_clear_search" />
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/news_divider" />
+
+                    <TextView
+                        android:id="@+id/btnDisablePersonalization"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="16dp"
+                        android:text="@string/profile_disable_personalization" />
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/news_divider" />
+
+                    <TextView
+                        android:id="@+id/btnRequestDeletion"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="16dp"
+                        android:text="@string/profile_request_account_deletion" />
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnOpenFullPolicy"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/profile_open_full_policy" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:title="@string/home_title"
+        android:icon="@drawable/ic_bottom_home" />
+    <item
+        android:id="@+id/localFragment"
+        android:title="@string/local_title"
+        android:icon="@drawable/ic_bottom_local" />
+    <item
+        android:id="@+id/searchFragment"
+        android:title="@string/search_title"
+        android:icon="@drawable/ic_bottom_search" />
+    <item
+        android:id="@+id/profileFragment"
+        android:title="@string/profile_title"
+        android:icon="@drawable/ic_bottom_profile" />
+</menu>

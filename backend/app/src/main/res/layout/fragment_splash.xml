@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSurface"
+    android:padding="32dp">
+
+    <ImageView
+        android:id="@+id/ivSplashLogo"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_notification"
+        app:layout_constraintBottom_toTopOf="@id/tvSplashTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:tint="?attr/colorPrimary" />
+
+    <TextView
+        android:id="@+id/tvSplashTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="?attr/colorOnSurface"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivSplashLogo" />
+
+    <TextView
+        android:id="@+id/tvSplashSubtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/splash_subtitle"
+        android:textColor="?attr/colorOnSurfaceVariant"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSplashTitle" />
+
+    <ProgressBar
+        android:id="@+id/progressSplash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:contentDescription="@string/loading"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSplashSubtitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

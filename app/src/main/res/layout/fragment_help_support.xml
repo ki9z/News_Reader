@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:title="@string/profile_help_support"
+        app:navigationIcon="@drawable/ic_back" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:id="@+id/tvContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="@string/profile_help_content"
+                android:textColor="@color/news_primary_text"
+                android:textSize="15sp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                app:cardCornerRadius="12dp"
+                app:strokeColor="@color/news_divider"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView android:layout_width="match_parent" android:layout_height="56dp" android:gravity="center_vertical" android:paddingHorizontal="16dp" android:text="@string/profile_help_faq" />
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/news_divider" />
+                    <TextView android:id="@+id/faqAccount" android:layout_width="match_parent" android:layout_height="56dp" android:gravity="center_vertical" android:paddingHorizontal="16dp" android:text="@string/profile_help_faq_account" />
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/news_divider" />
+                    <TextView android:id="@+id/faqHistory" android:layout_width="match_parent" android:layout_height="56dp" android:gravity="center_vertical" android:paddingHorizontal="16dp" android:text="@string/profile_help_faq_history" />
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/news_divider" />
+                    <TextView android:id="@+id/faqDownloads" android:layout_width="match_parent" android:layout_height="56dp" android:gravity="center_vertical" android:paddingHorizontal="16dp" android:text="@string/profile_help_faq_downloads" />
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/news_divider" />
+                    <TextView android:id="@+id/faqNotifications" android:layout_width="match_parent" android:layout_height="56dp" android:gravity="center_vertical" android:paddingHorizontal="16dp" android:text="@string/profile_help_faq_notifications" />
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/news_divider" />
+                    <TextView android:id="@+id/faqPrivacy" android:layout_width="match_parent" android:layout_height="56dp" android:gravity="center_vertical" android:paddingHorizontal="16dp" android:text="@string/profile_help_faq_privacy" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnContactSupport"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/profile_help_contact_support" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnReportBug"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/profile_help_report_bug" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSendFeedback"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/profile_help_send_feedback" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="12dp"
+                app:cardCornerRadius="12dp"
+                app:strokeColor="@color/news_divider"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView android:layout_width="match_parent" android:layout_height="56dp" android:gravity="center_vertical" android:paddingHorizontal="16dp" android:text="@string/profile_help_troubleshooting" />
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/news_divider" />
+                    <TextView android:id="@+id/btnClearCache" android:layout_width="match_parent" android:layout_height="56dp" android:gravity="center_vertical" android:paddingHorizontal="16dp" android:text="@string/profile_help_clear_cache" />
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/news_divider" />
+                    <TextView android:id="@+id/btnRefreshRecommendations" android:layout_width="match_parent" android:layout_height="56dp" android:gravity="center_vertical" android:paddingHorizontal="16dp" android:text="@string/profile_help_refresh_recommendations" />
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/news_divider" />
+                    <TextView android:id="@+id/btnResyncAccount" android:layout_width="match_parent" android:layout_height="56dp" android:gravity="center_vertical" android:paddingHorizontal="16dp" android:text="@string/profile_help_resync_account" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+

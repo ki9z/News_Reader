@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSurface"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:gravity="center"
+            android:text="@string/onboarding_title"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="@string/onboarding_subtitle"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:orientation="vertical">
+
+            <include layout="@layout/item_onboarding_feature" />
+
+            <TextView
+                android:id="@+id/tvFeaturePersonalize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_onboarding_card"
+                android:padding="18dp"
+                android:text="@string/onboarding_feature_personalize"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvFeatureOffline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_onboarding_card"
+                android:padding="18dp"
+                android:text="@string/onboarding_feature_offline"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvFeatureReader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_onboarding_card"
+                android:padding="18dp"
+                android:text="@string/onboarding_feature_reader"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnGetStarted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:minHeight="52dp"
+            android:text="@string/onboarding_get_started" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSkip"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:minHeight="48dp"
+            android:text="@string/onboarding_skip" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/news_bg_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginStart="@dimen/home_horizontal_padding"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/home_horizontal_padding"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnRefresh"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/home_refresh"
+            android:padding="8dp"
+            android:src="@android:drawable/ic_popup_sync"
+            app:tint="@color/news_link_blue" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/searchInputLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_weight="1"
+            android:hint="@string/search_placeholder"
+            app:boxBackgroundColor="@color/search_bar_bg"
+            app:boxBackgroundMode="filled"
+            app:boxCornerRadiusBottomEnd="20dp"
+            app:boxCornerRadiusBottomStart="20dp"
+            app:boxCornerRadiusTopEnd="20dp"
+            app:boxCornerRadiusTopStart="20dp"
+            app:boxStrokeWidth="0dp"
+            app:startIconDrawable="@android:drawable/ic_menu_search"
+            app:startIconTint="@color/news_secondary_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etHomeSearch"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="none"
+                android:textColor="@color/news_primary_text"
+                android:textColorHint="@color/news_secondary_text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageButton
+            android:id="@+id/btnSettings"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/home_filter"
+            android:padding="8dp"
+            android:src="@android:drawable/ic_menu_manage"
+            app:tint="@color/news_link_blue" />
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/home_horizontal_padding"
+        android:paddingEnd="@dimen/home_horizontal_padding"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/categoryTabContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="4dp"
+            android:paddingBottom="6dp" />
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/home_horizontal_padding"
+        android:layout_marginTop="6dp"
+        android:text="@string/home_category_section"
+        android:textColor="@color/news_primary_text"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/home_horizontal_padding"
+        android:paddingEnd="@dimen/home_horizontal_padding"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/sourceChipContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp" />
+    </HorizontalScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshHome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerHome"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingBottom="20dp"
+                android:visibility="gone" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutLoading"
+            android:contentDescription="@string/skeleton_loading_content_description"
+            android:importantForAccessibility="no"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/bg_skeleton" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_skeleton_line" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_skeleton_line" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/layoutEmpty"
+            layout="@layout/view_state_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/layoutError"
+            layout="@layout/view_state_error"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

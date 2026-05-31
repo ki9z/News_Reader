@@ -1,0 +1,3458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="6" by="lint 8.7.3" type="baseline" client="gradle" dependencies="false" name="AGP (8.7.3)" variant="all" version="8.7.3">
+
+    <issue
+        id="OldTargetApi"
+        message="Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the `android.os.Build.VERSION_CODES` javadoc for details."
+        errorLine1="        targetSdk = 35"
+        errorLine2="        ~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle.kts"
+            line="47"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="QueryPermissionsNeeded"
+        message="Consider adding a `&lt;queries>` declaration to your manifest when calling this method; see https://g.co/dev/packagevisibility for details"
+        errorLine1="        if (intent.resolveActivity(requireContext().packageManager) != null) {"
+        errorLine2="                   ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/src/com/ui/profile/HelpSupportFragment.kt"
+            line="71"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="AndroidGradlePluginVersion"
+        message="A newer version of com.android.application than 8.7.3 is available: 9.2.1"
+        errorLine1="agp = &quot;8.7.3&quot;"
+        errorLine2="      ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="2"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="AndroidGradlePluginVersion"
+        message="A newer version of com.android.application than 8.7.3 is available: 9.2.1"
+        errorLine1="agp = &quot;8.7.3&quot;"
+        errorLine2="      ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="2"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="AndroidGradlePluginVersion"
+        message="A newer version of com.android.application than 8.7.3 is available: 9.2.1"
+        errorLine1="agp = &quot;8.7.3&quot;"
+        errorLine2="      ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="2"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.google.android.gms:play-services-auth than 21.2.0 is available: 21.5.1"
+        errorLine1="    implementation(&quot;com.google.android.gms:play-services-auth:21.2.0&quot;)"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle.kts"
+            line="111"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.google.firebase:firebase-bom than 33.16.0 is available: 34.13.0"
+        errorLine1="    implementation(platform(&quot;com.google.firebase:firebase-bom:33.16.0&quot;))"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle.kts"
+            line="112"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.datastore:datastore-preferences than 1.1.1 is available: 1.2.1"
+        errorLine1="    implementation(&quot;androidx.datastore:datastore-preferences:1.1.1&quot;)"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle.kts"
+            line="114"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.security:security-crypto than 1.1.0-alpha06 is available: 1.1.0"
+        errorLine1="    implementation(&quot;androidx.security:security-crypto:1.1.0-alpha06&quot;)"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle.kts"
+            line="115"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.compose:compose-bom than 2024.09.00 is available: 2026.05.00"
+        errorLine1="    implementation(platform(&quot;androidx.compose:compose-bom:2024.09.00&quot;))"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle.kts"
+            line="126"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.activity:activity-compose than 1.9.3 is available: 1.13.0"
+        errorLine1="    implementation(&quot;androidx.activity:activity-compose:1.9.3&quot;)"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle.kts"
+            line="127"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.navigation:navigation-compose than 2.8.4 is available: 2.9.8"
+        errorLine1="    implementation(&quot;androidx.navigation:navigation-compose:2.8.4&quot;)"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle.kts"
+            line="133"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.core:core-ktx than 1.13.1 is available: 1.18.0"
+        errorLine1="coreKtx = &quot;1.13.1&quot;"
+        errorLine2="          ~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="5"
+            column="11"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.core:core-ktx than 1.13.1 is available: 1.18.0"
+        errorLine1="coreKtx = &quot;1.13.1&quot;"
+        errorLine2="          ~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="5"
+            column="11"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.core:core-ktx than 1.13.1 is available: 1.18.0"
+        errorLine1="coreKtx = &quot;1.13.1&quot;"
+        errorLine2="          ~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="5"
+            column="11"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.test.ext:junit than 1.2.1 is available: 1.3.0"
+        errorLine1="junitVersion = &quot;1.2.1&quot;"
+        errorLine2="               ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="7"
+            column="16"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.test.ext:junit than 1.2.1 is available: 1.3.0"
+        errorLine1="junitVersion = &quot;1.2.1&quot;"
+        errorLine2="               ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="7"
+            column="16"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.test.ext:junit than 1.2.1 is available: 1.3.0"
+        errorLine1="junitVersion = &quot;1.2.1&quot;"
+        errorLine2="               ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="7"
+            column="16"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.test.espresso:espresso-core than 3.6.1 is available: 3.7.0"
+        errorLine1="espressoCore = &quot;3.6.1&quot;"
+        errorLine2="               ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="8"
+            column="16"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.test.espresso:espresso-core than 3.6.1 is available: 3.7.0"
+        errorLine1="espressoCore = &quot;3.6.1&quot;"
+        errorLine2="               ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="8"
+            column="16"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.test.espresso:espresso-core than 3.6.1 is available: 3.7.0"
+        errorLine1="espressoCore = &quot;3.6.1&quot;"
+        errorLine2="               ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="8"
+            column="16"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.appcompat:appcompat than 1.7.0 is available: 1.7.1"
+        errorLine1="appcompat = &quot;1.7.0&quot;"
+        errorLine2="            ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="9"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.appcompat:appcompat than 1.7.0 is available: 1.7.1"
+        errorLine1="appcompat = &quot;1.7.0&quot;"
+        errorLine2="            ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="9"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.appcompat:appcompat than 1.7.0 is available: 1.7.1"
+        errorLine1="appcompat = &quot;1.7.0&quot;"
+        errorLine2="            ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="9"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.google.android.material:material than 1.12.0 is available: 1.13.0"
+        errorLine1="material = &quot;1.12.0&quot;"
+        errorLine2="           ~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="10"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.google.android.material:material than 1.12.0 is available: 1.13.0"
+        errorLine1="material = &quot;1.12.0&quot;"
+        errorLine2="           ~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="10"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.google.android.material:material than 1.12.0 is available: 1.13.0"
+        errorLine1="material = &quot;1.12.0&quot;"
+        errorLine2="           ~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="10"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.activity:activity than 1.9.3 is available: 1.13.0"
+        errorLine1="activity = &quot;1.9.3&quot;"
+        errorLine2="           ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="11"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.activity:activity than 1.9.3 is available: 1.13.0"
+        errorLine1="activity = &quot;1.9.3&quot;"
+        errorLine2="           ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="11"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.activity:activity than 1.9.3 is available: 1.13.0"
+        errorLine1="activity = &quot;1.9.3&quot;"
+        errorLine2="           ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="11"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.constraintlayout:constraintlayout than 2.2.0 is available: 2.2.1"
+        errorLine1="constraintlayout = &quot;2.2.0&quot;"
+        errorLine2="                   ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="12"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.constraintlayout:constraintlayout than 2.2.0 is available: 2.2.1"
+        errorLine1="constraintlayout = &quot;2.2.0&quot;"
+        errorLine2="                   ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="12"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.constraintlayout:constraintlayout than 2.2.0 is available: 2.2.1"
+        errorLine1="constraintlayout = &quot;2.2.0&quot;"
+        errorLine2="                   ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="12"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.navigation.safeargs.kotlin than 2.8.4 is available: 2.9.8"
+        errorLine1="navigation = &quot;2.8.4&quot;"
+        errorLine2="             ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="13"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.navigation.safeargs.kotlin than 2.8.4 is available: 2.9.8"
+        errorLine1="navigation = &quot;2.8.4&quot;"
+        errorLine2="             ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="13"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.navigation.safeargs.kotlin than 2.8.4 is available: 2.9.8"
+        errorLine1="navigation = &quot;2.8.4&quot;"
+        errorLine2="             ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="13"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.navigation:navigation-fragment-ktx than 2.8.4 is available: 2.9.8"
+        errorLine1="navigation = &quot;2.8.4&quot;"
+        errorLine2="             ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="13"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.navigation:navigation-fragment-ktx than 2.8.4 is available: 2.9.8"
+        errorLine1="navigation = &quot;2.8.4&quot;"
+        errorLine2="             ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="13"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.navigation:navigation-fragment-ktx than 2.8.4 is available: 2.9.8"
+        errorLine1="navigation = &quot;2.8.4&quot;"
+        errorLine2="             ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="13"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.navigation:navigation-ui-ktx than 2.8.4 is available: 2.9.8"
+        errorLine1="navigation = &quot;2.8.4&quot;"
+        errorLine2="             ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="13"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.navigation:navigation-ui-ktx than 2.8.4 is available: 2.9.8"
+        errorLine1="navigation = &quot;2.8.4&quot;"
+        errorLine2="             ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="13"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.navigation:navigation-ui-ktx than 2.8.4 is available: 2.9.8"
+        errorLine1="navigation = &quot;2.8.4&quot;"
+        errorLine2="             ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="13"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-runtime-ktx than 2.8.7 is available: 2.10.0"
+        errorLine1="lifecycle = &quot;2.8.7&quot;"
+        errorLine2="            ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="14"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-runtime-ktx than 2.8.7 is available: 2.10.0"
+        errorLine1="lifecycle = &quot;2.8.7&quot;"
+        errorLine2="            ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="14"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-runtime-ktx than 2.8.7 is available: 2.10.0"
+        errorLine1="lifecycle = &quot;2.8.7&quot;"
+        errorLine2="            ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="14"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-viewmodel-ktx than 2.8.7 is available: 2.10.0"
+        errorLine1="lifecycle = &quot;2.8.7&quot;"
+        errorLine2="            ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="14"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-viewmodel-ktx than 2.8.7 is available: 2.10.0"
+        errorLine1="lifecycle = &quot;2.8.7&quot;"
+        errorLine2="            ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="14"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-viewmodel-ktx than 2.8.7 is available: 2.10.0"
+        errorLine1="lifecycle = &quot;2.8.7&quot;"
+        errorLine2="            ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="14"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.room:room-compiler than 2.6.1 is available: 2.8.4"
+        errorLine1="room = &quot;2.6.1&quot;"
+        errorLine2="       ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="20"
+            column="8"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.room:room-compiler than 2.6.1 is available: 2.8.4"
+        errorLine1="room = &quot;2.6.1&quot;"
+        errorLine2="       ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="20"
+            column="8"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.room:room-compiler than 2.6.1 is available: 2.8.4"
+        errorLine1="room = &quot;2.6.1&quot;"
+        errorLine2="       ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="20"
+            column="8"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.room:room-ktx than 2.6.1 is available: 2.8.4"
+        errorLine1="room = &quot;2.6.1&quot;"
+        errorLine2="       ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="20"
+            column="8"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.room:room-ktx than 2.6.1 is available: 2.8.4"
+        errorLine1="room = &quot;2.6.1&quot;"
+        errorLine2="       ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="20"
+            column="8"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.room:room-ktx than 2.6.1 is available: 2.8.4"
+        errorLine1="room = &quot;2.6.1&quot;"
+        errorLine2="       ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="20"
+            column="8"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.room:room-runtime than 2.6.1 is available: 2.8.4"
+        errorLine1="room = &quot;2.6.1&quot;"
+        errorLine2="       ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="20"
+            column="8"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.room:room-runtime than 2.6.1 is available: 2.8.4"
+        errorLine1="room = &quot;2.6.1&quot;"
+        errorLine2="       ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="20"
+            column="8"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.room:room-runtime than 2.6.1 is available: 2.8.4"
+        errorLine1="room = &quot;2.6.1&quot;"
+        errorLine2="       ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="20"
+            column="8"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.swiperefreshlayout:swiperefreshlayout than 1.1.0 is available: 1.2.0"
+        errorLine1="swiperefreshlayout = &quot;1.1.0&quot;"
+        errorLine2="                     ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="21"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.swiperefreshlayout:swiperefreshlayout than 1.1.0 is available: 1.2.0"
+        errorLine1="swiperefreshlayout = &quot;1.1.0&quot;"
+        errorLine2="                     ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="21"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.swiperefreshlayout:swiperefreshlayout than 1.1.0 is available: 1.2.0"
+        errorLine1="swiperefreshlayout = &quot;1.1.0&quot;"
+        errorLine2="                     ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="21"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.google.gms.google-services than 4.4.2 is available: 4.4.4"
+        errorLine1="google-services = { id = &quot;com.google.gms.google-services&quot;, version = &quot;4.4.2&quot; }"
+        errorLine2="                                                                     ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="52"
+            column="70"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.google.gms.google-services than 4.4.2 is available: 4.4.4"
+        errorLine1="google-services = { id = &quot;com.google.gms.google-services&quot;, version = &quot;4.4.2&quot; }"
+        errorLine2="                                                                     ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="52"
+            column="70"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.google.gms.google-services than 4.4.2 is available: 4.4.4"
+        errorLine1="google-services = { id = &quot;com.google.gms.google-services&quot;, version = &quot;4.4.2&quot; }"
+        errorLine2="                                                                     ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="52"
+            column="70"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        message="&quot;error_network&quot; is not translated in &quot;vi&quot; (Vietnamese)"
+        errorLine1="    &lt;string name=&quot;error_network&quot;>No internet connection&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/error_strings.xml"
+            line="4"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        message="&quot;error_network_timeout&quot; is not translated in &quot;vi&quot; (Vietnamese)"
+        errorLine1="    &lt;string name=&quot;error_network_timeout&quot;>Connection timeout, please try again&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/error_strings.xml"
+            line="5"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        message="&quot;error_unauthorized&quot; is not translated in &quot;vi&quot; (Vietnamese)"
+        errorLine1="    &lt;string name=&quot;error_unauthorized&quot;>Please sign in&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/error_strings.xml"
+            line="8"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        message="&quot;error_token_expired&quot; is not translated in &quot;vi&quot; (Vietnamese)"
+        errorLine1="    &lt;string name=&quot;error_token_expired&quot;>Session expired, please sign in again&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/error_strings.xml"
+            line="9"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        message="&quot;error_rate_limited&quot; is not translated in &quot;vi&quot; (Vietnamese)"
+        errorLine1="    &lt;string name=&quot;error_rate_limited&quot;>Too many requests, please wait a moment&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/error_strings.xml"
+            line="12"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        message="&quot;error_server&quot; is not translated in &quot;vi&quot; (Vietnamese)"
+        errorLine1="    &lt;string name=&quot;error_server&quot;>Server is busy, please try again later&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/error_strings.xml"
+            line="15"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        message="&quot;error_client&quot; is not translated in &quot;vi&quot; (Vietnamese)"
+        errorLine1="    &lt;string name=&quot;error_client&quot;>Invalid request&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/error_strings.xml"
+            line="16"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        message="&quot;error_backend_unavailable&quot; is not translated in &quot;vi&quot; (Vietnamese)"
+        errorLine1="    &lt;string name=&quot;error_backend_unavailable&quot;>Unable to connect to service, please try again&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/error_strings.xml"
+            line="19"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        message="&quot;error_missing_api_config&quot; is not translated in &quot;vi&quot; (Vietnamese)"
+        errorLine1="    &lt;string name=&quot;error_missing_api_config&quot;>API configuration incomplete&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/error_strings.xml"
+            line="20"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        message="&quot;error_generic&quot; is not translated in &quot;vi&quot; (Vietnamese)"
+        errorLine1="    &lt;string name=&quot;error_generic&quot;>Unable to load data, please try again later&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/error_strings.xml"
+            line="23"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        message="&quot;error_unknown&quot; is not translated in &quot;vi&quot; (Vietnamese)"
+        errorLine1="    &lt;string name=&quot;error_unknown&quot;>An unknown error occurred&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/error_strings.xml"
+            line="24"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        message="&quot;empty_search_results&quot; is not translated in &quot;vi&quot; (Vietnamese)"
+        errorLine1="    &lt;string name=&quot;empty_search_results&quot;>No matching results found&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/error_strings.xml"
+            line="27"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        message="&quot;empty_bookmarks&quot; is not translated in &quot;vi&quot; (Vietnamese)"
+        errorLine1="    &lt;string name=&quot;empty_bookmarks&quot;>No saved articles yet&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/error_strings.xml"
+            line="28"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        message="&quot;empty_reading_history&quot; is not translated in &quot;vi&quot; (Vietnamese)"
+        errorLine1="    &lt;string name=&quot;empty_reading_history&quot;>No reading history yet&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/error_strings.xml"
+            line="29"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        message="&quot;empty_downloads&quot; is not translated in &quot;vi&quot; (Vietnamese)"
+        errorLine1="    &lt;string name=&quot;empty_downloads&quot;>No downloaded articles yet&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/error_strings.xml"
+            line="30"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        message="&quot;validation_email_invalid&quot; is not translated in &quot;vi&quot; (Vietnamese)"
+        errorLine1="    &lt;string name=&quot;validation_email_invalid&quot;>Please enter a valid email&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/error_strings.xml"
+            line="33"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        message="&quot;validation_password_short&quot; is not translated in &quot;vi&quot; (Vietnamese)"
+        errorLine1="    &lt;string name=&quot;validation_password_short&quot;>Password must be at least 6 characters&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/error_strings.xml"
+            line="34"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        message="&quot;validation_phone_invalid&quot; is not translated in &quot;vi&quot; (Vietnamese)"
+        errorLine1="    &lt;string name=&quot;validation_phone_invalid&quot;>Please enter a valid phone number&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/error_strings.xml"
+            line="35"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        message="&quot;validation_otp_invalid&quot; is not translated in &quot;vi&quot; (Vietnamese)"
+        errorLine1="    &lt;string name=&quot;validation_otp_invalid&quot;>OTP code must be 6 digits&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/error_strings.xml"
+            line="36"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        message="&quot;profile_admin_title&quot; is not translated in &quot;vi&quot; (Vietnamese)"
+        errorLine1="    &lt;string name=&quot;profile_admin_title&quot;>Quản trị bài báo&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="89"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        message="&quot;search_recent&quot; is not translated in &quot;vi&quot; (Vietnamese)"
+        errorLine1="    &lt;string name=&quot;search_recent&quot;>Recent searches&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="321"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        message="&quot;bookmark_removed&quot; is not translated in &quot;vi&quot; (Vietnamese)"
+        errorLine1="    &lt;string name=&quot;bookmark_removed&quot;>Removed from bookmarks&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="322"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        message="&quot;undo&quot; is not translated in &quot;vi&quot; (Vietnamese)"
+        errorLine1="    &lt;string name=&quot;undo&quot;>Undo&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="323"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        message="&quot;open_in_browser&quot; is not translated in &quot;vi&quot; (Vietnamese)"
+        errorLine1="    &lt;string name=&quot;open_in_browser&quot;>Open in browser&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="324"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        message="&quot;news_api_key_missing&quot; is not translated in &quot;vi&quot; (Vietnamese)"
+        errorLine1="    &lt;string name=&quot;news_api_key_missing&quot;>Missing NEWS_API_KEY. Check local.properties.&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="325"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        message="&quot;news_api_quota_exceeded&quot; is not translated in &quot;vi&quot; (Vietnamese)"
+        errorLine1="    &lt;string name=&quot;news_api_quota_exceeded&quot;>NewsAPI limit exceeded. Please try again later.&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="326"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        message="&quot;news_api_invalid_key&quot; is not translated in &quot;vi&quot; (Vietnamese)"
+        errorLine1="    &lt;string name=&quot;news_api_invalid_key&quot;>Invalid NewsAPI key. Check local.properties.&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="327"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        message="&quot;load_more_failed&quot; is not translated in &quot;vi&quot; (Vietnamese)"
+        errorLine1="    &lt;string name=&quot;load_more_failed&quot;>Could not load more articles.&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="328"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        message="&quot;profile_region_us&quot; is not translated in &quot;vi&quot; (Vietnamese)"
+        errorLine1="    &lt;string name=&quot;profile_region_us&quot;>United States&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="329"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        message="&quot;profile_region_vn&quot; is not translated in &quot;vi&quot; (Vietnamese)"
+        errorLine1="    &lt;string name=&quot;profile_region_vn&quot;>Vietnam&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="330"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        message="&quot;profile_region_gb&quot; is not translated in &quot;vi&quot; (Vietnamese)"
+        errorLine1="    &lt;string name=&quot;profile_region_gb&quot;>United Kingdom&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="331"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        message="&quot;profile_region_au&quot; is not translated in &quot;vi&quot; (Vietnamese)"
+        errorLine1="    &lt;string name=&quot;profile_region_au&quot;>Australia&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="332"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        message="&quot;profile_default_tab_home&quot; is not translated in &quot;vi&quot; (Vietnamese)"
+        errorLine1="    &lt;string name=&quot;profile_default_tab_home&quot;>Home&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="333"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        message="&quot;profile_default_tab_local&quot; is not translated in &quot;vi&quot; (Vietnamese)"
+        errorLine1="    &lt;string name=&quot;profile_default_tab_local&quot;>Local&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="334"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        message="&quot;profile_default_tab_search&quot; is not translated in &quot;vi&quot; (Vietnamese)"
+        errorLine1="    &lt;string name=&quot;profile_default_tab_search&quot;>Search&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="335"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        message="&quot;profile_default_tab_bookmark&quot; is not translated in &quot;vi&quot; (Vietnamese)"
+        errorLine1="    &lt;string name=&quot;profile_default_tab_bookmark&quot;>Bookmark&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="336"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        message="&quot;profile_article_style_compact&quot; is not translated in &quot;vi&quot; (Vietnamese)"
+        errorLine1="    &lt;string name=&quot;profile_article_style_compact&quot;>Compact&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="337"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        message="&quot;profile_article_style_reader&quot; is not translated in &quot;vi&quot; (Vietnamese)"
+        errorLine1="    &lt;string name=&quot;profile_article_style_reader&quot;>Reader&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="338"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        message="&quot;profile_setting_updated&quot; is not translated in &quot;vi&quot; (Vietnamese)"
+        errorLine1="    &lt;string name=&quot;profile_setting_updated&quot;>Setting updated&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="339"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        message="&quot;profile_local_data_deleted&quot; is not translated in &quot;vi&quot; (Vietnamese)"
+        errorLine1="    &lt;string name=&quot;profile_local_data_deleted&quot;>Local account data deleted&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="340"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        message="&quot;profile_local_data_cleared&quot; is not translated in &quot;vi&quot; (Vietnamese)"
+        errorLine1="    &lt;string name=&quot;profile_local_data_cleared&quot;>Local data cleared&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="341"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        message="&quot;bookmark_empty_title&quot; is not translated in &quot;vi&quot; (Vietnamese)"
+        errorLine1="    &lt;string name=&quot;bookmark_empty_title&quot;>No saved articles&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="342"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        message="&quot;bookmark_empty_message&quot; is not translated in &quot;vi&quot; (Vietnamese)"
+        errorLine1="    &lt;string name=&quot;bookmark_empty_message&quot;>Articles you bookmark will appear here.&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="343"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="PluralsCandidate"
+        message="Formatting %d followed by words (&quot;hits&quot;): This should probably be a plural rather than a string"
+        errorLine1="    &lt;string name=&quot;local_city_picker_meta_with_hits&quot;>%1$s • %2$s • %3$d hits&lt;/string>"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="46"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="PluralsCandidate"
+        message="Formatting %d followed by words (&quot;new&quot;): This should probably be a plural rather than a string"
+        errorLine1="    &lt;string name=&quot;profile_topic_meta_template&quot;>%1$d new today&lt;/string>"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="160"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="PluralsCandidate"
+        message="Formatting %d followed by words (&quot;downloaded&quot;): This should probably be a plural rather than a string"
+        errorLine1="    &lt;string name=&quot;profile_download_stats&quot;>%1$d downloaded • %2$s&lt;/string>"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="174"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="InsecureBaseConfiguration"
+        message="Insecure Base Configuration"
+        errorLine1="    &lt;base-config cleartextTrafficPermitted=&quot;true&quot; />"
+        errorLine2="                                            ~~~~">
+        <location
+            file="src/main/res/xml/network_security_config.xml"
+            line="3"
+            column="45"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort."
+        errorLine1="        notifyDataSetChanged()"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/src/com/ui/local/LocalCityOptionAdapter.kt"
+            line="39"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="UseCompoundDrawables"
+        message="This tag and its children can be replaced by one `&lt;TextView/>` and a compound drawable"
+        errorLine1="                &lt;LinearLayout"
+        errorLine2="                 ~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_profile.xml"
+            line="350"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="UseCompoundDrawables"
+        message="This tag and its children can be replaced by one `&lt;TextView/>` and a compound drawable"
+        errorLine1="                &lt;LinearLayout"
+        errorLine2="                 ~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_profile.xml"
+            line="366"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="UseCompoundDrawables"
+        message="This tag and its children can be replaced by one `&lt;TextView/>` and a compound drawable"
+        errorLine1="                &lt;LinearLayout"
+        errorLine2="                 ~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_profile.xml"
+            line="382"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="DisableBaselineAlignment"
+        message="Set `android:baselineAligned=&quot;false&quot;` on this element for better performance"
+        errorLine1="&lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2=" ~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/item_home_news.xml"
+            line="2"
+            column="2"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `@color/news_bg_white` with a theme that also paints a background (inferred theme is `@style/Theme.NewsReaderAndroid`)"
+        errorLine1="    android:background=&quot;@color/news_bg_white&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_home.xml"
+            line="6"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `@color/news_bg_white` with a theme that also paints a background (inferred theme is `@style/Theme.NewsReaderAndroid`)"
+        errorLine1="    android:background=&quot;@color/news_bg_white&quot;>"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_local.xml"
+            line="6"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `@color/news_bg_white` with a theme that also paints a background (inferred theme is `@style/Theme.NewsReaderAndroid`)"
+        errorLine1="    android:background=&quot;@color/news_bg_white&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_profile.xml"
+            line="6"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `@color/news_bg_white` with a theme that also paints a background (inferred theme is `@style/Theme.NewsReaderAndroid`)"
+        errorLine1="    android:background=&quot;@color/news_bg_white&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_search.xml"
+            line="6"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `?attr/selectableItemBackground` with a theme that also paints a background (inferred theme is `@style/Theme.NewsReaderAndroid`)"
+        errorLine1="    android:background=&quot;?attr/selectableItemBackground&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/item_home_news.xml"
+            line="8"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.bg_category_chip` appears to be unused"
+        errorLine1="&lt;shape xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/drawable/bg_category_chip.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.black` appears to be unused"
+        errorLine1="    &lt;color name=&quot;black&quot;>#FF000000&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="3"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.white` appears to be unused"
+        errorLine1="    &lt;color name=&quot;white&quot;>#FFFFFFFF&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="4"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.news_tab_entertainment` appears to be unused"
+        errorLine1="    &lt;color name=&quot;news_tab_entertainment&quot;>#FF9CD0F3&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="17"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.news_tab_lifestyle` appears to be unused"
+        errorLine1="    &lt;color name=&quot;news_tab_lifestyle&quot;>#FFD3A9E5&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="18"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.news_tab_us` appears to be unused"
+        errorLine1="    &lt;color name=&quot;news_tab_us&quot;>#FFF6A7AE&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="19"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.card_corner_radius` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;card_corner_radius&quot;>12dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="3"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.card_elevation` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;card_elevation&quot;>4dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="4"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.padding_small` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;padding_small&quot;>8dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="5"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.padding_medium` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;padding_medium&quot;>16dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="6"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.padding_large` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;padding_large&quot;>24dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="7"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.home_section_spacing` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;home_section_spacing&quot;>12dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="13"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.home_tab_padding_horizontal` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;home_tab_padding_horizontal&quot;>16dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="15"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.home_tab_padding_vertical` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;home_tab_padding_vertical&quot;>8dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="16"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.home_chip_padding_horizontal` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;home_chip_padding_horizontal&quot;>14dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="18"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.home_chip_padding_vertical` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;home_chip_padding_vertical&quot;>6dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="19"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.bottom_nav_icon_size` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;bottom_nav_icon_size&quot;>32dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="23"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.bottom_nav_padding_vertical` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;bottom_nav_padding_vertical&quot;>10dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="24"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.bottom_nav_padding_horizontal` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;bottom_nav_padding_horizontal&quot;>12dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="25"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.bottom_nav_item_padding_top` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;bottom_nav_item_padding_top&quot;>8dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="26"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.bottom_nav_item_padding_bottom` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;bottom_nav_item_padding_bottom&quot;>12dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="27"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.error_network` appears to be unused"
+        errorLine1="    &lt;string name=&quot;error_network&quot;>No internet connection&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/error_strings.xml"
+            line="4"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.error_network_timeout` appears to be unused"
+        errorLine1="    &lt;string name=&quot;error_network_timeout&quot;>Connection timeout, please try again&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/error_strings.xml"
+            line="5"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.error_unauthorized` appears to be unused"
+        errorLine1="    &lt;string name=&quot;error_unauthorized&quot;>Please sign in&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/error_strings.xml"
+            line="8"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.error_token_expired` appears to be unused"
+        errorLine1="    &lt;string name=&quot;error_token_expired&quot;>Session expired, please sign in again&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/error_strings.xml"
+            line="9"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.error_rate_limited` appears to be unused"
+        errorLine1="    &lt;string name=&quot;error_rate_limited&quot;>Too many requests, please wait a moment&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/error_strings.xml"
+            line="12"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.error_server` appears to be unused"
+        errorLine1="    &lt;string name=&quot;error_server&quot;>Server is busy, please try again later&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/error_strings.xml"
+            line="15"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.error_client` appears to be unused"
+        errorLine1="    &lt;string name=&quot;error_client&quot;>Invalid request&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/error_strings.xml"
+            line="16"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.error_backend_unavailable` appears to be unused"
+        errorLine1="    &lt;string name=&quot;error_backend_unavailable&quot;>Unable to connect to service, please try again&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/error_strings.xml"
+            line="19"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.error_missing_api_config` appears to be unused"
+        errorLine1="    &lt;string name=&quot;error_missing_api_config&quot;>API configuration incomplete&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/error_strings.xml"
+            line="20"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.error_generic` appears to be unused"
+        errorLine1="    &lt;string name=&quot;error_generic&quot;>Unable to load data, please try again later&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/error_strings.xml"
+            line="23"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.error_unknown` appears to be unused"
+        errorLine1="    &lt;string name=&quot;error_unknown&quot;>An unknown error occurred&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/error_strings.xml"
+            line="24"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.empty_search_results` appears to be unused"
+        errorLine1="    &lt;string name=&quot;empty_search_results&quot;>No matching results found&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/error_strings.xml"
+            line="27"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.empty_bookmarks` appears to be unused"
+        errorLine1="    &lt;string name=&quot;empty_bookmarks&quot;>No saved articles yet&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/error_strings.xml"
+            line="28"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.empty_reading_history` appears to be unused"
+        errorLine1="    &lt;string name=&quot;empty_reading_history&quot;>No reading history yet&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/error_strings.xml"
+            line="29"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.empty_downloads` appears to be unused"
+        errorLine1="    &lt;string name=&quot;empty_downloads&quot;>No downloaded articles yet&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/error_strings.xml"
+            line="30"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.validation_email_invalid` appears to be unused"
+        errorLine1="    &lt;string name=&quot;validation_email_invalid&quot;>Please enter a valid email&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/error_strings.xml"
+            line="33"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.validation_password_short` appears to be unused"
+        errorLine1="    &lt;string name=&quot;validation_password_short&quot;>Password must be at least 6 characters&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/error_strings.xml"
+            line="34"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.validation_phone_invalid` appears to be unused"
+        errorLine1="    &lt;string name=&quot;validation_phone_invalid&quot;>Please enter a valid phone number&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/error_strings.xml"
+            line="35"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.validation_otp_invalid` appears to be unused"
+        errorLine1="    &lt;string name=&quot;validation_otp_invalid&quot;>OTP code must be 6 digits&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/error_strings.xml"
+            line="36"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.layout.item_loading_footer` appears to be unused"
+        errorLine1="&lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/layout/item_loading_footer.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.home_tab_top` appears to be unused"
+        errorLine1="    &lt;string name=&quot;home_tab_top&quot;>Top&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="17"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.home_tab_entertainment` appears to be unused"
+        errorLine1="    &lt;string name=&quot;home_tab_entertainment&quot;>Entertainment&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="21"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.home_tab_lifestyle` appears to be unused"
+        errorLine1="    &lt;string name=&quot;home_tab_lifestyle&quot;>Lifestyle&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="22"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.home_tab_us` appears to be unused"
+        errorLine1="    &lt;string name=&quot;home_tab_us&quot;>U.S.&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="23"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.search_topics_soon` appears to be unused"
+        errorLine1="    &lt;string name=&quot;search_topics_soon&quot;>More topics will be available soon&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="34"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.local_placeholder` appears to be unused"
+        errorLine1="    &lt;string name=&quot;local_placeholder&quot;>Local screen (UI demo)&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="37"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.local_city_picker_meta` appears to be unused"
+        errorLine1="    &lt;string name=&quot;local_city_picker_meta&quot;>%1$s • %2$s&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="45"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.local_empty_title` appears to be unused"
+        errorLine1="    &lt;string name=&quot;local_empty_title&quot;>No news for this area yet&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="52"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.no_local_result` appears to be unused"
+        errorLine1="    &lt;string name=&quot;no_local_result&quot;>No news for this area yet&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="54"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_placeholder` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_placeholder&quot;>Profile screen (UI demo)&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="55"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_personal_details_title` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_personal_details_title&quot;>Personal details&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="76"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_field_occupation` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_field_occupation&quot;>Occupation&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="77"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_field_location` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_field_location&quot;>Location&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="78"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_field_birthday` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_field_birthday&quot;>Birthday&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="79"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_field_interests` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_field_interests&quot;>Interests&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="80"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_field_bio` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_field_bio&quot;>Bio&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="81"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_not_set` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_not_set&quot;>Not set&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="82"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_quick_actions` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_quick_actions&quot;>Quick actions&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="83"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_account_section` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_account_section&quot;>Account and Sign in&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="90"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_not_signed_in` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_not_signed_in&quot;>You are not signed in&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="91"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_signed_in_with` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_signed_in_with&quot;>Signed in with %1$s&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="92"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_linked_none` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_linked_none&quot;>No linked providers&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="93"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_linked_list` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_linked_list&quot;>Linked: %1$s&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="94"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_sign_in_phone` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_sign_in_phone&quot;>Sign in with phone&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="95"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_sign_in_google` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_sign_in_google&quot;>Sign in with Google&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="96"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_sign_in_facebook` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_sign_in_facebook&quot;>Sign in with Facebook&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="97"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_link_google` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_link_google&quot;>Link Google&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="98"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_link_facebook` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_link_facebook&quot;>Link Facebook&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="99"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_link_apple` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_link_apple&quot;>Link Apple&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="100"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_link_provider` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_link_provider&quot;>Link %1$s&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="101"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_unlink_provider` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_unlink_provider&quot;>Unlink %1$s&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="102"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_signed_in_success` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_signed_in_success&quot;>Signed in successfully&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="103"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_sign_in_failed` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_sign_in_failed&quot;>Sign in failed&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="104"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_firebase_not_ready` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_firebase_not_ready&quot;>Firebase is not configured. Switched to local demo auth.&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="105"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_phone_dialog_title` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_phone_dialog_title&quot;>Sign in with phone&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="106"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_phone_hint` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_phone_hint&quot;>Phone number (e.g. +84987654321)&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="107"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_continue` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_continue&quot;>Continue&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="108"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_code_sent` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_code_sent&quot;>Verification code sent&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="109"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_otp_dialog_title` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_otp_dialog_title&quot;>Enter verification code&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="110"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_otp_hint` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_otp_hint&quot;>6-digit code&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="111"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_verify` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_verify&quot;>Verify&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="112"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_invalid_phone` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_invalid_phone&quot;>Phone number is invalid&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="113"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_invalid_otp` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_invalid_otp&quot;>Verification code is invalid&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="114"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_too_many_requests` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_too_many_requests&quot;>Too many requests. Try again later&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="115"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_recaptcha_required` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_recaptcha_required&quot;>reCAPTCHA verification is required on this device&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="116"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_linked_success` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_linked_success&quot;>Provider linked&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="117"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_unlinked_success` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_unlinked_success&quot;>Provider unlinked&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="118"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_provider_phone` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_provider_phone&quot;>Phone (%1$s)&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="120"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_provider_google` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_provider_google&quot;>Google&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="121"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_provider_facebook` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_provider_facebook&quot;>Facebook&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="122"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_provider_apple` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_provider_apple&quot;>Apple&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="123"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_provider_email` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_provider_email&quot;>Email&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="124"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_provider_other` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_provider_other&quot;>Other&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="125"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_unlink_title` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_unlink_title&quot;>Unlink provider&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="126"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_unlink_message` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_unlink_message&quot;>Do you want to unlink %1$s?&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="127"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_action_unlink` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_action_unlink&quot;>Unlink&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="128"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_history` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_history&quot;>History&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="129"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_language_value` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_language_value&quot;>English&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="140"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_download_saved` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_download_saved&quot;>Saved to Downloads&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="151"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.detail_author_prefix` appears to be unused"
+        errorLine1="    &lt;string name=&quot;detail_author_prefix&quot;>By %1$s&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="177"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_history_empty` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_history_empty&quot;>You have not read any articles recently&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="181"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_read_again` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_read_again&quot;>Read again&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="182"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_toggle_notifications` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_toggle_notifications&quot;>Alerts&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="186"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_offline_badge` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_offline_badge&quot;>Offline&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="201"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_group_profile` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_group_profile&quot;>Profile&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="202"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_group_preferences` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_group_preferences&quot;>Preferences&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="203"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_group_notifications` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_group_notifications&quot;>Notifications&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="204"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_download_complete_alert` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_download_complete_alert&quot;>Download complete&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="218"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_help_about` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_help_about&quot;>About app&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="230"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_help_check_updates` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_help_check_updates&quot;>Check for updates&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="231"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.search_default_trending_title_1` appears to be unused"
+        errorLine1="    &lt;string name=&quot;search_default_trending_title_1&quot;>Artemis II&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="263"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.search_default_trending_desc_1` appears to be unused"
+        errorLine1="    &lt;string name=&quot;search_default_trending_desc_1&quot;>The crewed Orion spacecraft from NASA executed a key burn to depart Earth for the Moon.&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="264"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.search_default_trending_title_2` appears to be unused"
+        errorLine1="    &lt;string name=&quot;search_default_trending_title_2&quot;>Pam Bondi Ousted&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="265"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.search_default_trending_desc_2` appears to be unused"
+        errorLine1="    &lt;string name=&quot;search_default_trending_desc_2&quot;>President Trump fired Attorney General Pam Bondi and installed Deputy AG Todd Blanche.&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="266"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.search_default_trending_title_3` appears to be unused"
+        errorLine1="    &lt;string name=&quot;search_default_trending_title_3&quot;>Trump Address&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="267"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.search_default_trending_desc_3` appears to be unused"
+        errorLine1="    &lt;string name=&quot;search_default_trending_desc_3&quot;>Trump vowed harsher strikes on Iran while offering no firm end date for the conflict.&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="268"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.search_default_trending_title_4` appears to be unused"
+        errorLine1="    &lt;string name=&quot;search_default_trending_title_4&quot;>SCOTUS hearing&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="269"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.search_default_trending_desc_4` appears to be unused"
+        errorLine1="    &lt;string name=&quot;search_default_trending_desc_4&quot;>The Supreme Court weighed an attempt by Trump to limit birthright citizenship.&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="270"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.search_default_trending_title_5` appears to be unused"
+        errorLine1="    &lt;string name=&quot;search_default_trending_title_5&quot;>Tiger Woods&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="271"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.search_default_trending_desc_5` appears to be unused"
+        errorLine1="    &lt;string name=&quot;search_default_trending_desc_5&quot;>Bodycam video shows the DUI arrest of Tiger Woods after a rollover crash in Florida.&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="272"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.search_default_trending_title_6` appears to be unused"
+        errorLine1="    &lt;string name=&quot;search_default_trending_title_6&quot;>SpaceX IPO&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="273"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.search_default_trending_desc_6` appears to be unused"
+        errorLine1="    &lt;string name=&quot;search_default_trending_desc_6&quot;>SpaceX has confidentially filed for an IPO that could value the company at $1.75 trillion.&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="274"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.search_default_trending_title_7` appears to be unused"
+        errorLine1="    &lt;string name=&quot;search_default_trending_title_7&quot;>Randy George&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="275"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.search_default_trending_desc_7` appears to be unused"
+        errorLine1="    &lt;string name=&quot;search_default_trending_desc_7&quot;>Army Chief Gen. Randy George was forced to retire immediately.&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="276"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.search_default_trending_title_8` appears to be unused"
+        errorLine1="    &lt;string name=&quot;search_default_trending_title_8&quot;>Blake Lively&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="277"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.search_default_trending_desc_8` appears to be unused"
+        errorLine1="    &lt;string name=&quot;search_default_trending_desc_8&quot;>A federal judge dismissed most claims made by Blake Lively in a high-profile lawsuit.&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="278"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_settings_soon` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_settings_soon&quot;>Settings screen will be available soon&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="281"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_edit_soon` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_edit_soon&quot;>Edit profile will be available soon&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="282"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_history_soon` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_history_soon&quot;>Reading history will be available soon&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="283"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_following_topics_soon` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_following_topics_soon&quot;>Following topics will be available soon&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="284"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_downloads_soon` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_downloads_soon&quot;>Downloads will be available soon&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="285"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_account_settings_soon` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_account_settings_soon&quot;>Account settings will be available soon&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="286"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_privacy_soon` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_privacy_soon&quot;>Privacy policy screen will be available soon&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="287"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_help_soon` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_help_soon&quot;>Help &amp;amp; support screen will be available soon&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="288"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_language_soon` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_language_soon&quot;>Language settings will be available soon&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="289"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_logout_soon` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_logout_soon&quot;>Log out flow will be available soon&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="290"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_notifications_on` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_notifications_on&quot;>Notifications enabled&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="291"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_notifications_off` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_notifications_off&quot;>Notifications disabled&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="292"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_dark_mode_on` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_dark_mode_on&quot;>Dark mode enabled&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="293"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_dark_mode_off` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_dark_mode_off&quot;>Dark mode disabled&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="294"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.search_hint` appears to be unused"
+        errorLine1="    &lt;string name=&quot;search_hint&quot;>Enter search keywords&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="295"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.back_to_summary` appears to be unused"
+        errorLine1="    &lt;string name=&quot;back_to_summary&quot;>Back to summary&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="306"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.loading_article` appears to be unused"
+        errorLine1="    &lt;string name=&quot;loading_article&quot;>Loading full article...&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="307"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.open_article_failed` appears to be unused"
+        errorLine1="    &lt;string name=&quot;open_article_failed&quot;>Could not load article&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="308"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.content_not_available` appears to be unused"
+        errorLine1="    &lt;string name=&quot;content_not_available&quot;>Content is not available&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="310"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.empty_message` appears to be unused"
+        errorLine1="    &lt;string name=&quot;empty_message&quot;>There is no content to display yet&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="312"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.category_general` appears to be unused"
+        errorLine1="    &lt;string name=&quot;category_general&quot;>General&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="317"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.category_business` appears to be unused"
+        errorLine1="    &lt;string name=&quot;category_business&quot;>Business&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="318"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.category_sports` appears to be unused"
+        errorLine1="    &lt;string name=&quot;category_sports&quot;>Sports&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="319"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.category_technology` appears to be unused"
+        errorLine1="    &lt;string name=&quot;category_technology&quot;>Technology&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="320"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.open_in_browser` appears to be unused"
+        errorLine1="    &lt;string name=&quot;open_in_browser&quot;>Open in browser&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="324"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.news_api_key_missing` appears to be unused"
+        errorLine1="    &lt;string name=&quot;news_api_key_missing&quot;>Missing NEWS_API_KEY. Check local.properties.&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="325"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.news_api_quota_exceeded` appears to be unused"
+        errorLine1="    &lt;string name=&quot;news_api_quota_exceeded&quot;>NewsAPI limit exceeded. Please try again later.&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="326"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.news_api_invalid_key` appears to be unused"
+        errorLine1="    &lt;string name=&quot;news_api_invalid_key&quot;>Invalid NewsAPI key. Check local.properties.&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="327"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.load_more_failed` appears to be unused"
+        errorLine1="    &lt;string name=&quot;load_more_failed&quot;>Could not load more articles.&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="328"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile_local_data_cleared` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile_local_data_cleared&quot;>Local data cleared&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="341"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;loading_article&quot;>Loading full article...&lt;/string>"
+        errorLine2="                                   ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="307"
+            column="36"/>
+    </issue>
+
+    <issue
+        id="UseTomlInstead"
+        message="Use version catalog instead"
+        errorLine1="    implementation(&quot;com.google.android.gms:play-services-location:21.3.0&quot;)"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle.kts"
+            line="110"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="UseTomlInstead"
+        message="Use version catalog instead"
+        errorLine1="    implementation(&quot;com.google.android.gms:play-services-auth:21.2.0&quot;)"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle.kts"
+            line="111"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="UseTomlInstead"
+        message="Use version catalog instead"
+        errorLine1="    implementation(platform(&quot;com.google.firebase:firebase-bom:33.16.0&quot;))"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle.kts"
+            line="112"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="UseTomlInstead"
+        message="Use version catalog instead"
+        errorLine1="    implementation(&quot;com.google.firebase:firebase-auth-ktx&quot;)"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle.kts"
+            line="113"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="UseTomlInstead"
+        message="Use version catalog instead"
+        errorLine1="    implementation(&quot;androidx.datastore:datastore-preferences:1.1.1&quot;)"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle.kts"
+            line="114"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="UseTomlInstead"
+        message="Use version catalog instead"
+        errorLine1="    implementation(&quot;androidx.security:security-crypto:1.1.0-alpha06&quot;)"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle.kts"
+            line="115"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="UseTomlInstead"
+        message="Use version catalog instead"
+        errorLine1="    implementation(platform(&quot;androidx.compose:compose-bom:2024.09.00&quot;))"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle.kts"
+            line="126"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="UseTomlInstead"
+        message="Use version catalog instead"
+        errorLine1="    implementation(&quot;androidx.activity:activity-compose:1.9.3&quot;)"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle.kts"
+            line="127"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="UseTomlInstead"
+        message="Use version catalog instead"
+        errorLine1="    implementation(&quot;androidx.compose.ui:ui&quot;)"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle.kts"
+            line="128"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="UseTomlInstead"
+        message="Use version catalog instead"
+        errorLine1="    implementation(&quot;androidx.compose.ui:ui-graphics&quot;)"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle.kts"
+            line="129"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="UseTomlInstead"
+        message="Use version catalog instead"
+        errorLine1="    implementation(&quot;androidx.compose.ui:ui-tooling-preview&quot;)"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle.kts"
+            line="130"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="UseTomlInstead"
+        message="Use version catalog instead"
+        errorLine1="    implementation(&quot;androidx.compose.material3:material3&quot;)"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle.kts"
+            line="131"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="UseTomlInstead"
+        message="Use version catalog instead"
+        errorLine1="    implementation(&quot;androidx.compose.material:material-icons-extended&quot;)"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle.kts"
+            line="132"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="UseTomlInstead"
+        message="Use version catalog instead"
+        errorLine1="    implementation(&quot;androidx.navigation:navigation-compose:2.8.4&quot;)"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle.kts"
+            line="133"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="UseTomlInstead"
+        message="Use version catalog instead"
+        errorLine1="    implementation(&quot;io.coil-kt:coil-compose:2.6.0&quot;)"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle.kts"
+            line="134"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="UseTomlInstead"
+        message="Use version catalog instead"
+        errorLine1="    implementation(&quot;org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.3&quot;)"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle.kts"
+            line="135"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="UseTomlInstead"
+        message="Use version catalog instead"
+        errorLine1="    debugImplementation(&quot;androidx.compose.ui:ui-tooling&quot;)"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle.kts"
+            line="136"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="UseTomlInstead"
+        message="Use version catalog instead"
+        errorLine1="    debugImplementation(&quot;androidx.compose.ui:ui-test-manifest&quot;)"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle.kts"
+            line="137"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="                    &lt;ImageView"
+        errorLine2="                     ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_profile.xml"
+            line="141"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="                    &lt;ImageView"
+        errorLine2="                     ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_profile.xml"
+            line="155"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="                    &lt;ImageView android:layout_width=&quot;20dp&quot; android:layout_height=&quot;20dp&quot; android:src=&quot;@drawable/ic_ms_history&quot; app:tint=&quot;@color/news_secondary_text&quot; />"
+        errorLine2="                     ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_profile.xml"
+            line="174"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="                    &lt;ImageView android:layout_width=&quot;18dp&quot; android:layout_height=&quot;18dp&quot; android:src=&quot;@drawable/ic_ms_chevron_right&quot; app:tint=&quot;@color/news_secondary_text&quot; />"
+        errorLine2="                     ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_profile.xml"
+            line="176"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="                    &lt;ImageView android:layout_width=&quot;20dp&quot; android:layout_height=&quot;20dp&quot; android:src=&quot;@drawable/ic_ms_topic&quot; app:tint=&quot;@color/news_secondary_text&quot; />"
+        errorLine2="                     ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_profile.xml"
+            line="191"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="                    &lt;ImageView android:layout_width=&quot;18dp&quot; android:layout_height=&quot;18dp&quot; android:src=&quot;@drawable/ic_ms_chevron_right&quot; app:tint=&quot;@color/news_secondary_text&quot; />"
+        errorLine2="                     ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_profile.xml"
+            line="193"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="                    &lt;ImageView android:layout_width=&quot;20dp&quot; android:layout_height=&quot;20dp&quot; android:src=&quot;@drawable/ic_ms_download&quot; app:tint=&quot;@color/news_secondary_text&quot; />"
+        errorLine2="                     ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_profile.xml"
+            line="208"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="                    &lt;ImageView android:layout_width=&quot;18dp&quot; android:layout_height=&quot;18dp&quot; android:src=&quot;@drawable/ic_ms_chevron_right&quot; app:tint=&quot;@color/news_secondary_text&quot; />"
+        errorLine2="                     ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_profile.xml"
+            line="210"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="                    &lt;ImageView android:layout_width=&quot;20dp&quot; android:layout_height=&quot;20dp&quot; android:src=&quot;@drawable/ic_ms_settings&quot; app:tint=&quot;@color/news_secondary_text&quot; />"
+        errorLine2="                     ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_profile.xml"
+            line="225"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="                    &lt;ImageView android:layout_width=&quot;18dp&quot; android:layout_height=&quot;18dp&quot; android:src=&quot;@drawable/ic_ms_chevron_right&quot; app:tint=&quot;@color/news_secondary_text&quot; />"
+        errorLine2="                     ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_profile.xml"
+            line="227"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="                    &lt;ImageView android:layout_width=&quot;18dp&quot; android:layout_height=&quot;18dp&quot; android:src=&quot;@drawable/ic_ms_chevron_right&quot; app:tint=&quot;@color/news_secondary_text&quot; />"
+        errorLine2="                     ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_profile.xml"
+            line="361"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="                    &lt;ImageView android:layout_width=&quot;18dp&quot; android:layout_height=&quot;18dp&quot; android:src=&quot;@drawable/ic_ms_chevron_right&quot; app:tint=&quot;@color/news_secondary_text&quot; />"
+        errorLine2="                     ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_profile.xml"
+            line="377"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="                    &lt;ImageView android:layout_width=&quot;18dp&quot; android:layout_height=&quot;18dp&quot; android:src=&quot;@drawable/ic_ms_chevron_right&quot; app:tint=&quot;@color/news_secondary_text&quot; />"
+        errorLine2="                     ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_profile.xml"
+            line="393"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="            binding.tvPublishedAt.text = &quot;$prefix${extras.joinToString(&quot; | &quot;)}&quot;"
+        errorLine2="                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/src/com/ui/adapter/NewsAdapter.kt"
+            line="100"
+            column="42"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Number formatting does not take into account locale settings. Consider using `String.format` instead."
+        errorLine1="            binding.tvRank.text = item.rank.toString()"
+        errorLine2="                                  ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/src/com/ui/adapter/TrendingAdapter.kt"
+            line="32"
+            column="35"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;+&quot;, should use `@string` resource"
+        errorLine1="                android:text=&quot;+&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/item_explore_topic.xml"
+            line="42"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="RtlSymmetry"
+        message="When you define `paddingEnd` you should probably also define `paddingStart` for right-to-left symmetry"
+        errorLine1="        android:paddingEnd=&quot;12dp&quot;>"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/item_home_news.xml"
+            line="19"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RtlSymmetry"
+        message="When you define `paddingEnd` you should probably also define `paddingStart` for right-to-left symmetry"
+        errorLine1="            android:paddingEnd=&quot;12dp&quot;>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/item_trending.xml"
+            line="29"
+            column="13"/>
+    </issue>
+
+</issues>

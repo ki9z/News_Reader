@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_corner_radius">12dp</dimen>
+    <dimen name="card_elevation">4dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">16dp</dimen>
+    <dimen name="padding_large">24dp</dimen>
+    <dimen name="category_button_spacing">8dp</dimen>
+    <dimen name="tab_corner_radius">10dp</dimen>
+    <dimen name="chip_corner_radius">24dp</dimen>
+    <dimen name="chip_stroke_width">1dp</dimen>
+    <dimen name="home_horizontal_padding">16dp</dimen>
+    <dimen name="home_section_spacing">12dp</dimen>
+    <dimen name="home_tab_height">36dp</dimen>
+    <dimen name="home_tab_padding_horizontal">16dp</dimen>
+    <dimen name="home_tab_padding_vertical">8dp</dimen>
+    <dimen name="home_chip_height">32dp</dimen>
+    <dimen name="home_chip_padding_horizontal">14dp</dimen>
+    <dimen name="home_chip_padding_vertical">6dp</dimen>
+    <dimen name="home_news_item_padding_vertical">12dp</dimen>
+    <dimen name="home_news_image_size">96dp</dimen>
+    <dimen name="bottom_nav_height">88dp</dimen>
+    <dimen name="bottom_nav_icon_size">32dp</dimen>
+    <dimen name="bottom_nav_padding_vertical">10dp</dimen>
+    <dimen name="bottom_nav_padding_horizontal">12dp</dimen>
+    <dimen name="bottom_nav_item_padding_top">8dp</dimen>
+    <dimen name="bottom_nav_item_padding_bottom">12dp</dimen>
+    <dimen name="bottom_nav_margin_horizontal">12dp</dimen>
+    <dimen name="bottom_nav_margin_bottom">12dp</dimen>
+</resources>

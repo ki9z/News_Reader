@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.ui.onboarding.SplashFragment"
+        android:label="@string/app_name">
+        <action
+            android:id="@+id/action_splashFragment_to_onboardingFragment"
+            app:destination="@id/onboardingFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/onboardingFragment"
+        android:name="com.ui.onboarding.OnboardingFragment"
+        android:label="@string/onboarding_title">
+        <action
+            android:id="@+id/action_onboardingFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/onboardingFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.ui.home.HomeFragment"
+        android:label="@string/home_title">
+        <action
+            android:id="@+id/action_homeFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/localFragment"
+        android:name="com.ui.local.LocalFragment"
+        android:label="@string/local_title">
+        <action
+            android:id="@+id/action_localFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.ui.search.SearchFragment"
+        android:label="@string/search_title">
+        <action
+            android:id="@+id/action_searchFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.ui.profile.ProfileFragment"
+        android:label="@string/profile_title">
+        <action
+            android:id="@+id/action_profileFragment_to_bookmarkFragment"
+            app:destination="@id/bookmarkFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_readingHistoryFragment"
+            app:destination="@id/readingHistoryFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_followingTopicsFragment"
+            app:destination="@id/followingTopicsFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_downloadsFragment"
+            app:destination="@id/downloadsFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_accountSettingsFragment"
+            app:destination="@id/accountSettingsFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_privacyPolicyFragment"
+            app:destination="@id/privacyPolicyFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_helpSupportFragment"
+            app:destination="@id/helpSupportFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/bookmarkFragment"
+        android:name="com.ui.bookmark.BookmarkFragment"
+        android:label="@string/bookmark_title">
+        <action
+            android:id="@+id/action_bookmarkFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/readingHistoryFragment"
+        android:name="com.ui.profile.ReadingHistoryFragment"
+        android:label="@string/profile_reading_history">
+        <action
+            android:id="@+id/action_readingHistoryFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/followingTopicsFragment"
+        android:name="com.ui.profile.FollowingTopicsFragment"
+        android:label="@string/profile_following_topics" />
+
+    <fragment
+        android:id="@+id/downloadsFragment"
+        android:name="com.ui.profile.DownloadsFragment"
+        android:label="@string/profile_downloads">
+        <action
+            android:id="@+id/action_downloadsFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/accountSettingsFragment"
+        android:name="com.ui.profile.AccountSettingsFragment"
+        android:label="@string/profile_account_settings" />
+
+    <fragment
+        android:id="@+id/privacyPolicyFragment"
+        android:name="com.ui.profile.PrivacyPolicyFragment"
+        android:label="@string/profile_privacy_policy" />
+
+    <fragment
+        android:id="@+id/helpSupportFragment"
+        android:name="com.ui.profile.HelpSupportFragment"
+        android:label="@string/profile_help_support" />
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.ui.detail.DetailFragment"
+        android:label="@string/detail_title">
+        <argument android:name="title" app:argType="string" />
+        <argument android:name="description" app:argType="string" android:defaultValue="" />
+        <argument android:name="content" app:argType="string" android:defaultValue="" />
+        <argument android:name="imageUrl" app:argType="string" android:defaultValue="" />
+        <argument android:name="articleUrl" app:argType="string" android:defaultValue="" />
+        <argument android:name="sourceName" app:argType="string" android:defaultValue="" />
+        <argument android:name="author" app:argType="string" android:defaultValue="" />
+        <argument android:name="publishedAt" app:argType="string" android:defaultValue="" />
+        <argument android:name="fromScreen" app:argType="string" android:defaultValue="" />
+        <action
+            android:id="@+id/action_detailFragment_self"
+            app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/action_detailFragment_to_articleWebViewFragment"
+            app:destination="@id/articleWebViewFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/articleWebViewFragment"
+        android:name="com.ui.reader.ArticleWebViewFragment"
+        android:label="@string/read_full_article">
+        <argument android:name="title" app:argType="string" android:defaultValue="" />
+        <argument android:name="articleUrl" app:argType="string" />
+        <argument android:name="description" app:argType="string" android:defaultValue="" />
+        <argument android:name="content" app:argType="string" android:defaultValue="" />
+        <argument android:name="sourceName" app:argType="string" android:defaultValue="" />
+        <argument android:name="publishedAt" app:argType="string" android:defaultValue="" />
+        <argument android:name="imageUrl" app:argType="string" android:defaultValue="" />
+        <argument android:name="startInReaderMode" app:argType="boolean" android:defaultValue="false" />
+    </fragment>
+</navigation>

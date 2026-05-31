@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="98dp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="12dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="92dp"
+        android:layout_height="92dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="46dp"
+            app:cardElevation="0dp">
+
+            <ImageView
+                android:id="@+id/ivTopic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@null"
+                android:scaleType="centerCrop" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="top|end"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            app:cardBackgroundColor="@color/news_bg_white"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="2dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="+"
+                android:textColor="@color/news_primary_text"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </com.google.android.material.card.MaterialCardView>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvTopicTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="2"
+        android:textColor="@color/news_primary_text"
+        android:textSize="14sp"
+        android:textStyle="normal" />
+
+</LinearLayout>

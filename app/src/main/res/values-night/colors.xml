@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="news_bg_white">#FF101214</color>
+    <color name="news_primary_text">#FFE8EAED</color>
+    <color name="news_secondary_text">#FFBDC1C6</color>
+    <color name="news_link_blue">#FF8AB4F8</color>
+    <color name="news_divider">#FF303134</color>
+    <color name="search_bar_bg">#FF202124</color>
+
+    <color name="news_tab_unselected_bg">#FF202124</color>
+    <color name="news_tab_top">#FF7A2E36</color>
+    <color name="news_tab_local">#FF7A4D13</color>
+    <color name="news_tab_following">#FF1E5F44</color>
+    <color name="news_tab_entertainment">#FF18547A</color>
+    <color name="news_tab_lifestyle">#FF633876</color>
+    <color name="news_tab_us">#FF7A2E36</color>
+
+    <color name="news_chip_selected_bg">#FFFFFFFF</color>
+    <color name="news_chip_stroke">#FF5F6368</color>
+
+    <color name="news_trending_rank_1">#FFFF8A95</color>
+    <color name="news_trending_rank_2">#FFFFB86C</color>
+    <color name="news_trending_rank_3">#FF7DDA9E</color>
+    <color name="news_trending_rank_4">#FF7DCFFF</color>
+</resources>

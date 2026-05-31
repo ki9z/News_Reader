@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Network errors -->
+    <string name="error_network">No internet connection</string>
+    <string name="error_network_timeout">Connection timeout, please try again</string>
+
+    <!-- Authentication errors -->
+    <string name="error_unauthorized">Please sign in</string>
+    <string name="error_token_expired">Session expired, please sign in again</string>
+
+    <!-- Rate limiting -->
+    <string name="error_rate_limited">Too many requests, please wait a moment</string>
+
+    <!-- Server errors -->
+    <string name="error_server">Server is busy, please try again later</string>
+    <string name="error_client">Invalid request</string>
+
+    <!-- API/Configuration errors -->
+    <string name="error_backend_unavailable">Unable to connect to service, please try again</string>
+    <string name="error_missing_api_config">API configuration incomplete</string>
+
+    <!-- Generic errors -->
+    <string name="error_generic">Unable to load data, please try again later</string>
+    <string name="error_unknown">An unknown error occurred</string>
+
+    <!-- Empty states -->
+    <string name="empty_search_results">No matching results found</string>
+    <string name="empty_bookmarks">No saved articles yet</string>
+    <string name="empty_reading_history">No reading history yet</string>
+    <string name="empty_downloads">No downloaded articles yet</string>
+
+    <!-- Validation messages -->
+    <string name="validation_email_invalid">Please enter a valid email</string>
+    <string name="validation_password_short">Password must be at least 6 characters</string>
+    <string name="validation_phone_invalid">Please enter a valid phone number</string>
+    <string name="validation_otp_invalid">OTP code must be 6 digits</string>
+</resources>
